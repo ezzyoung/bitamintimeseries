@@ -1,0 +1,2 @@
+1. You have to add the Sleep-EDF Dataset in this folder to operate the model.
+2. more_data is the hypnogram dataset extracted from ISRUC-Sleep data.
