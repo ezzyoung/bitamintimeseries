@@ -35,7 +35,7 @@
 ### 🧪 `Experiment`
 
 
-#### A. Sleep Stage Prediction - DL
+#### A. 'Sleep Stage Prediction - DL'
 
 - Dataset Merge : 120 명의 Sleep-EDF Data PSG + Hypnogram 합쳐서 pt 형식으로 조합 후 사용
 - 구조 변경 참고 모델 : **TCN, SleePyCo, Cross-Modal Transformers**
@@ -79,7 +79,9 @@
 - **input images**  
 
 
-#### **Result**
+#### B. 'Sleep Stage Prediction -ML'
+#### C. 'Sleep Anomaly Prediction-ML'
+#### D. 'Sleep Pattern Clustering'
 
 #### B. 분석
 
