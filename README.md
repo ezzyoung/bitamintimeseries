@@ -35,9 +35,22 @@
 ### 🧪 `Experiment`
 
 
-#### A. 모델별 성능
+#### A. Sleep Stage Prediction - DL
 
-- **prompt** 
+- **모델 구조 실험 1: BiLSTM + Attention**
+
+![image](https://github.com/user-attachments/assets/de5ea29c-a82d-4443-b1f1-ae8bdb9b07ff)
+
+- **모델 구조 실험 2 :Cross Attention with BiGRU**
+
+![image](https://github.com/user-attachments/assets/1aa79b7c-9b26-460a-8415-3095e1f2dc1e)
+
+- **모델 구조 실험 3 :CNN + TCN + Attention**
+
+![image](https://github.com/user-attachments/assets/e7d28355-29c7-41ea-9fb3-d9f918c2e16e)
+
+- **모델 구조 실험 4 (최종 선택) : 5 CNN + Linear Classifer**
+
 
 - **image_text** 
 
