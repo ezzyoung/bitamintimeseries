@@ -5,6 +5,12 @@
 - 기존에 Black Box 문제가 있던 의료 딥러닝 모델 XAI 분석
 - 해석가능성이 딥러닝보다 높은 머신러닝 모델 사용 및 의료 도메인 연관 XAI 분석
 
+## 🌟 Project Objective
+
+- 모델 성능
+- 해석 가능성
+- 경량 및 단순화
+
 ## ⚙️ **Process**
 
 ### 🧩 `Detailed Process'
