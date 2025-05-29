@@ -35,7 +35,21 @@
 ### 🧪 `Experiment`
 
 
-#### 상세 사항
+#### A. 모델별 성능
+
+- **prompt** 
+
+- **image_text** 
+
+- **weight** 
+
+- **input images**  
+
+
+#### **Result**
+
+#### B. 분석
+
 - **prompt** 
 
 - **image_text** 
