@@ -37,22 +37,42 @@
 
 #### A. Sleep Stage Prediction - DL
 
+- Dataset Merge : 120 명의 Sleep-EDF Data PSG + Hypnogram 합쳐서 pt 형식으로 조합 후 사용
+- 구조 변경 참고 모델 : **TCN, SleePyCo, Cross-Modal Transformers**
+
 - **모델 구조 실험 1: BiLSTM + Attention**
 
 ![image](https://github.com/user-attachments/assets/de5ea29c-a82d-4443-b1f1-ae8bdb9b07ff)
+
+    - EEG/EOG 각각의 신호를 CNN으로 전처리하여 특징 추출
+    - 두 모달리티를 결합한 후 BiLSTM으로 시계열 정보를 학습
+    - Attention 메커니즘을 통해 중요한 시간 구간에 집중
+    - Classifier를 통해 최종 수면 단계 예측
 
 - **모델 구조 실험 2 :Cross Attention with BiGRU**
 
 ![image](https://github.com/user-attachments/assets/1aa79b7c-9b26-460a-8415-3095e1f2dc1e)
 
+    - EEG/EOG 각각에서 저수준~고수준 특징을 CNN으로 추출
+    - Q/K/V 기반 Cross-Modal Attention으로 두 모달리티 간 상호작용 학습
+    - BiGRU를 통해 시간 흐름을 반영한 순차 정보 처리
+    - Fully Connected Layer로 수면 단계 분류
+
 - **모델 구조 실험 3 :CNN + TCN + Attention**
 
 ![image](https://github.com/user-attachments/assets/e7d28355-29c7-41ea-9fb3-d9f918c2e16e)
 
+    - 위 Cross Attention with BiGRU 에서 GRU 대신 TCN 사용
+    - Attention Pooling 적용
+    - Query-Based Attention Pooling 적용도 실험
+
 - **모델 구조 실험 4 (최종 선택) : 5 CNN + Linear Classifer**
+  
+  - 5개의 CNN 블록, 13개의 1D CNN, 각 블록마다 SE 블록 추가하여 Attention 추가
 
+- **최종 모델 성능**
 
-- **image_text** 
+![image](https://github.com/user-attachments/assets/9a3c8e7d-2f72-47e2-b45b-786a693c207d)
 
 - **weight** 
 
